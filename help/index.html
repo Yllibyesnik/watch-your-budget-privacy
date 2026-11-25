@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watch Your Budget – How to Use</title>
+  <meta name="description" content="How to use the Watch Your Budget iPhone app: transactions, budgets, regular payments, reports, Face ID and backups.">
+  <style>
+    :root {
+      --bg: #ffffff; --text: #1d2420; --muted: #5b665f; --accent: #2e7d32;
+      --card: #f1f6f1; --border: #d6e3d6; --warn: #8a5a00; --warnbg: #fff6e0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0f1511; --text: #e3e9e4; --muted: #9aa69e; --accent: #66bb6a;
+              --card: #18211b; --border: #2a362d; --warn: #ffcc80; --warnbg: #2b2412; }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+    header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+    header svg { flex: none; width: 64px; height: 64px; border-radius: 14px; }
+    h1 { font-size: 28px; line-height: 1.2; margin: 0; }
+    .lead { color: var(--muted); margin: 8px 0 24px; }
+    h2 { font-size: 21px; margin: 40px 0 8px; color: var(--accent); scroll-margin-top: 16px; }
+    h3 { font-size: 17px; margin: 20px 0 4px; }
+    nav.toc {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 12px 20px; margin: 16px 0;
+    }
+    nav.toc ol { margin: 4px 0; padding-left: 20px; columns: 2; column-gap: 24px; }
+    nav.toc li { margin: 2px 0; break-inside: avoid; }
+    @media (max-width: 520px) { nav.toc ol { columns: 1; } }
+    ol.steps li, ul li { margin: 6px 0; }
+    .tip, .warn { border-radius: 12px; padding: 12px 16px; margin: 12px 0; }
+    .tip { background: var(--card); border: 1px solid var(--border); }
+    .warn { background: var(--warnbg); color: var(--warn); border: 1px solid currentColor; }
+    .warn strong, .tip strong { display: block; margin-bottom: 2px; }
+    kbd {
+      font: inherit; font-weight: 600; padding: 0 6px; border-radius: 6px;
+      border: 1px solid var(--border); background: var(--card); white-space: nowrap;
+    }
+    a { color: var(--accent); }
+    footer { margin-top: 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--border); padding-top: 16px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <svg viewBox="0 0 1024 1024" aria-hidden="true">
+      <rect width="1024" height="1024" fill="#141c16"/>
+      <circle cx="512" cy="512" r="320" fill="none" stroke="#2E3B32" stroke-width="80"/>
+      <circle cx="512" cy="512" r="320" fill="none" stroke="#66BB6A" stroke-width="80" stroke-linecap="round"
+              stroke-dasharray="1508 2011" transform="rotate(-90 512 512)"/>
+      <text x="512" y="625" font-family="-apple-system, Helvetica, Arial" font-weight="800" font-size="330"
+            text-anchor="middle" fill="#fff">£</text>
+    </svg>
+    <h1>Watch Your Budget<br>How to Use</h1>
+  </header>
+  <p class="lead">A simple, private budget for your iPhone. Everything stays on your phone.</p>
+
+  <nav class="toc" aria-label="Contents">
+    <ol>
+      <li><a href="#start">Getting started</a></li>
+      <li><a href="#add">Adding a transaction</a></li>
+      <li><a href="#journal">Journal</a></li>
+      <li><a href="#budgets">Budgets</a></li>
+      <li><a href="#regular">Regular payments</a></li>
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#reports">Reports</a></li>
+      <li><a href="#warranties">Warranties</a></li>
+      <li><a href="#categories">Categories &amp; transfers</a></li>
+      <li><a href="#security">Face ID &amp; PIN</a></li>
+      <li><a href="#backup">Backups</a></li>
+      <li><a href="#newphone">Moving to a new phone</a></li>
+      <li><a href="#faq">Questions</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="start">1. Getting started</h2>
+  <ol class="steps">
+    <li><strong>Secure the app.</strong> The first time you open it, choose <kbd>Use Face ID</kbd> or
+        <kbd>Use a PIN</kbd> (4 digits). You'll need it every time you open the app.</li>
+    <li><strong>Allow notifications</strong> when asked, so you're reminded the day before a regular
+        payment is due.</li>
+    <li><strong>You're on the main menu.</strong> It has Journal, Dashboard, Reports, Budgets, Regular,
+        Warranties, Categories and Settings, plus <em>How This App Works</em> at the bottom.</li>
+  </ol>
+  <div class="tip"><strong>Ready-made categories</strong>
+    The app starts with common UK categories such as Salary/Pension, Mortgage/Rent, Energy, Council Tax
+    and Groceries. You can add or remove them any time in Categories.</div>
+  <div class="tip"><strong>Coming from the older Budget Tracker app?</strong>
+    In Budget Tracker, go to <kbd>Settings</kbd> → <kbd>Export my data</kbd> and save the file to Files.
+    Then in Watch Your Budget go to <kbd>Settings</kbd> → <kbd>Import from Budget Tracker</kbd> and pick
+    that file. It brings across transactions with photos, categories, budgets, regular payments and
+    warranties.</div>
+
+  <h2 id="add">2. Adding a transaction</h2>
+  <ol class="steps">
+    <li>Open <kbd>Journal</kbd> and tap the green <kbd>+</kbd> button.</li>
+    <li>Check the <strong>date</strong> (tap it to change).</li>
+    <li>Choose a <strong>category</strong>. Expense, Revenue (money in) and Payment (transfers) are all
+        in the list.</li>
+    <li>Type the <strong>amount</strong>. The <kbd>+</kbd>/<kbd>−</kbd> next to it is for the occasional
+        negative amount, such as a refund.</li>
+    <li>Add the <strong>payee</strong> (who you paid, e.g. "Tesco") and, if you like, a
+        <strong>description</strong> (e.g. "Weekly shop").</li>
+    <li>Optionally tap <kbd>Add Photo</kbd> to attach a picture of the receipt.</li>
+    <li>Tap <kbd>Save</kbd>.</li>
+  </ol>
+  <div class="tip"><strong>Budget warnings</strong>
+    If a new entry takes a category to 80% of its budget, or over it, the app tells you when you save.</div>
+
+  <h2 id="journal">3. Journal</h2>
+  <p>Every transaction, grouped by month, with this month opened automatically. The figure beside each
+     month is that month's net (money in minus money out).</p>
+  <ul>
+    <li><strong>Edit:</strong> tap an entry.</li>
+    <li><strong>Delete:</strong> swipe an entry to the left. You'll be asked to confirm first.</li>
+    <li><strong>Search:</strong> tap 🔍 and type a payee, description, category or amount.</li>
+    <li><strong>Receipt photos:</strong> tap the small picture to see it full size. Pinch to zoom.</li>
+    <li><strong>Find duplicates:</strong> tap <kbd>•••</kbd> (top right) → <kbd>Find duplicates</kbd>.
+        It finds entries with the same day, category, amount and payee, keeps the copy with a photo or
+        description, and lets you delete the extras one group at a time or all at once.
+        <kbd>Undo</kbd> appears straight after.</li>
+  </ul>
+
+  <h2 id="budgets">4. Budgets</h2>
+  <p>Set a spending limit for a category, either <strong>monthly</strong> or <strong>annual</strong>.
+     Tap <kbd>+</kbd>, choose the category, enter the amount and choose the period.</p>
+  <ul>
+    <li>Each budget shows a bar for <em>this month</em> (monthly budgets) and <em>this year</em>.</li>
+    <li>The bar is <strong>green</strong> while you're fine, <strong>orange</strong> from 80%, and
+        <strong>red</strong> when you're over.</li>
+    <li>Underneath it says how much is <strong>left</strong>, or how much you're <strong>over</strong>.</li>
+    <li>Tap a budget's name to change it, or swipe it left to delete it.</li>
+  </ul>
+
+  <h2 id="regular">5. Regular payments</h2>
+  <p>Bills and subscriptions that come round regularly: <strong>weekly</strong>,
+     <strong>every four weeks</strong> or <strong>monthly</strong>.</p>
+  <ul>
+    <li>The list shows how many days until each one is next due, soonest first.</li>
+    <li>You'll get a <strong>reminder at 9am the day before</strong> each payment.</li>
+    <li><strong>Weekends and bank holidays:</strong> switch these on for payments that go out on the
+        working day before (for example, a payment due on a Sunday goes on the Friday). England &amp;
+        Wales bank holidays are worked out automatically for every year.</li>
+    <li>For <em>every four weeks</em>, enter the date of one known payment and the app counts on from
+        there.</li>
+  </ul>
+
+  <h2 id="dashboard">6. Dashboard</h2>
+  <p>This year at a glance: total money in, money out and net, then each month so far with the latest
+     at the top. Tap the clock icon (top right) to look back at previous years.</p>
+
+  <h2 id="reports">7. Reports</h2>
+  <p>Open <kbd>Reports</kbd> and choose one. Most can be printed or shared as a PDF.</p>
+  <ul>
+    <li><strong>This Month</strong> / <strong>Last Month</strong>: every category, with the transactions behind it.</li>
+    <li><strong>Your Own Dates</strong>: any start and end date, or a tax year.</li>
+    <li><strong>By Category</strong>: one category, for this month or this year.</li>
+    <li><strong>One Payee</strong>: everything paid to one name, for this year, last year or all years.</li>
+    <li><strong>Year to Date</strong>: money in, money out and net for each month.</li>
+    <li><strong>Year by Category</strong>: every category, month by month, on one page.</li>
+    <li><strong>Budget vs Actual</strong>: each budget against what you've spent.</li>
+    <li><strong>This Month Breakdown</strong>: spending by category. Tap one to see its transactions.</li>
+    <li><strong>Trends</strong>: one category, month by month, compared with last year or with its budget.</li>
+  </ul>
+
+  <h2 id="warranties">8. Warranties</h2>
+  <p>Keep track of things you've bought that came with a warranty: the item, purchase date, an
+     optional expiry date, notes, and a link to wherever you keep the receipt (for example a file in
+     iCloud Drive). Tap the link to open it.</p>
+
+  <h2 id="categories">9. Categories &amp; transfers</h2>
+  <p>Categories come in three kinds:</p>
+  <ul>
+    <li><strong>Revenue</strong>: money coming in, such as salary or pension.</li>
+    <li><strong>Expense</strong>: money going out, such as groceries or energy.</li>
+    <li><strong>Transfer</strong> (shown as "Payment - …"): moving your own money around, such as paying
+        off a credit card or putting money into savings. Transfers don't change your net figure,
+        because no money is really coming in or going out.</li>
+  </ul>
+  <p>Tap <kbd>+</kbd> to add a category, or swipe one left to delete it.</p>
+
+  <h2 id="security">10. Face ID &amp; PIN</h2>
+  <ul>
+    <li>Change how the app unlocks in <kbd>Settings</kbd> → <strong>Security</strong>: Face ID, PIN, or
+        Change PIN.</li>
+    <li>The app <strong>locks whenever you leave it</strong>. When you come back, Face ID checks you
+        automatically.</li>
+    <li>If Face ID doesn't recognise you, Apple's box offers <kbd>Enter Passcode</kbd>, so your iPhone
+        passcode always gets you in.</li>
+    <li>In the app switcher, your figures are hidden behind a cover.</li>
+  </ul>
+  <div class="warn"><strong>Don't forget your PIN</strong>
+    For your security, a forgotten PIN can't be reset. You would have to delete and reinstall the app,
+    then restore your latest backup. Face ID avoids this, because your iPhone passcode works as a
+    fallback.</div>
+
+  <h2 id="backup">11. Backups</h2>
+  <p>Your budget is stored <strong>only on your phone</strong>. If the phone is lost or broken, a
+     backup is the only way to get it back, so back up regularly.</p>
+  <h3>Making a backup</h3>
+  <ol class="steps">
+    <li>Go to <kbd>Settings</kbd> → <kbd>Back up my data</kbd>.</li>
+    <li>In the share sheet, choose <kbd>Save to Files</kbd> and pick <strong>iCloud Drive</strong> (best,
+        because it's kept off the phone), or AirDrop it to a computer, or email it to yourself.</li>
+  </ol>
+  <p>Each backup is a single file named with the date and time, for example
+     <code>WatchYourBudget-backup-2026-11-25-1315.sqlite</code>. It includes everything, photos too.</p>
+  <div class="tip"><strong>Reminder</strong>
+    If it's been 30 days since your last backup, a "Time to back up" card appears on the main menu.
+    <kbd>Later</kbd> hides it for a week.</div>
+  <h3>Restoring a backup</h3>
+  <ol class="steps">
+    <li>Go to <kbd>Settings</kbd> → <kbd>Restore from a backup</kbd> and choose the backup file.</li>
+    <li>The app shows what's in it. Check it, then tap <kbd>Restore</kbd>.</li>
+  </ol>
+  <p>Restoring <strong>replaces everything</strong> in the app with the backup. A copy of what you had
+     is kept, so <kbd>Undo last restore or import</kbd> in Settings puts it back if you change your mind.</p>
+
+  <h2 id="newphone">12. Moving to a new phone</h2>
+  <ol class="steps">
+    <li>On the old phone: <kbd>Settings</kbd> → <kbd>Back up my data</kbd> → save to <strong>iCloud Drive</strong>.</li>
+    <li>On the new phone: install Watch Your Budget and set up Face ID or a PIN.</li>
+    <li><kbd>Settings</kbd> → <kbd>Restore from a backup</kbd> → choose that file from iCloud Drive.</li>
+  </ol>
+
+  <h2 id="faq">13. Questions</h2>
+  <h3>Can anyone else see my budget?</h3>
+  <p>No. Everything stays on your phone, and nothing is sent anywhere. Each person who installs the app
+     has their own separate budget. See the <a href="../">privacy policy</a>.</p>
+  <h3>Does it sync between my iPhone and iPad?</h3>
+  <p>No. Each device keeps its own data. You can copy everything across using a backup and restore.</p>
+  <h3>I'm not getting payment reminders.</h3>
+  <p>Check iPhone <strong>Settings</strong> → <strong>Notifications</strong> → <strong>Watch Your Budget</strong>
+     and make sure <strong>Allow Notifications</strong> is on. Reminders are only for payments marked
+     as active.</p>
+  <h3>I deleted something by mistake.</h3>
+  <p>Find duplicates has <kbd>Undo</kbd> straight afterwards. Otherwise, restoring your latest backup
+     brings back everything as it was when you made it (and replaces anything newer).</p>
+
+  <footer>
+    Need help? Email <a href="mailto:bill.kinsey1@gmail.com?subject=Watch%20Your%20Budget%20help">bill.kinsey1@gmail.com</a>
+    · <a href="../">Privacy policy</a><br>
+    Watch Your Budget is developed independently by Bill Kinsey.
+  </footer>
+</main>
+</body>
+</html>
